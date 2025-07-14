@@ -1,0 +1,109 @@
+        body {
+            background-color: #B47E63;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0; /* Remove default body margin */
+            display: flex; /* Use flexbox to center content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+        
+        h1 {
+            color: #F2F2F2;
+            font-size: 2.5em;
+            margin-bottom: 12px;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #F2F2F2;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 80%; /* Adjusted for better responsiveness */
+            max-width: 500px; /* Max width to prevent stretching on large screens */
+            margin: 2rem auto; /* Adjusted margin */
+            text-align: center;
+            padding: 28px; /* Increased padding */
+            background-color: #594E4D;
+            background-blend-mode: overlay;
+            background-image: url(https://cdn.pixabay.com/photo/2020/05/01/08/36/train-5115906_1280.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            color: #FFFFFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+        }
+        
+        button {
+            padding: 12px 24px; /* Increased padding for better touch targets */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #B17070; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.03rem;
+            transition: background-color 0.3s ease; /* Smooth transition for hover */
+        }
+        
+        button:hover {
+            background-color: #9c5e5e; /* Darker shade on hover */
+        }
+
+        
+        
+        #save-btn {
+            background-color: rgb(64, 156, 60);
+        }
+        
+        #save-btn:hover {
+            background-color: rgb(50, 120, 47); /* Darker shade on hover */
+        }
+
+        #reset-btn { /* New style for the reset button */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #707AB1; /* A different color for reset */
+            width: 6em;
+            height: 2.5em;
+            font-size: 12px;
+            
+        }
+
+        #reset-btn:hover {
+            background-color: #5c6691; /* Darker shade on hover */
+        }
+
+        /* Basic responsiveness for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+   
